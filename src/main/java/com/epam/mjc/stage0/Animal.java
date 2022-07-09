@@ -5,16 +5,16 @@ public class Animal {
     private int numberOfPaws;
     private boolean hasFur;
 
-    Animal(){}
-    Animal(String color, int numberOfPaws, boolean hasFur) {
+    public Animal(){}
+    public Animal(String color, int numberOfPaws, boolean hasFur) {
         this.color = color;
         this.numberOfPaws = numberOfPaws;
         this.hasFur = hasFur;
     }
 
-    String getDescription(){
+    public String getDescription(){
         System.out.println("This animal is mostly " + color + ".");
-        if(numberOfPaws > 1)
+        if(numberOfPaws > 0 && numberOfPaws > 1)
             return "It has " + numberOfPaws + " paws";
         else if(numberOfPaws == 1)
             return "It has " + numberOfPaws + " paw";
