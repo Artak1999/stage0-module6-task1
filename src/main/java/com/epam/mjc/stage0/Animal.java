@@ -11,15 +11,15 @@ public class Animal {
         this.hasFur = hasFur;
     }
 
-    public void getDescription(){
+    public String getDescription(){
         System.out.println("This animal is mostly " + color + ".");
         if(numberOfPaws > 0 && numberOfPaws > 1)
             System.out.println("It has " + numberOfPaws + " paws");
         else if(numberOfPaws == 1)
             System.out.println("It has " + numberOfPaws + " paw");
         if(hasFur)
-            System.out.println("and a fur.");
+            return "and a fur.";
         else
-            System.out.println("and no fur.");
+           return "and no fur.";
     }
 }

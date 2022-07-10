@@ -5,9 +5,10 @@ public class Bird extends Animal{
         super("blue",2,false);
     }
 
-    @Override
-    public void getDescription(){
+
+    public String getDescription(){
         super.getDescription();
+        return "Moreover, it has 2 wings and can fly.";
     }
 
     public static void main(String[] args) {
