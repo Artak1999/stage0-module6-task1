@@ -13,10 +13,10 @@ public class Animal {
 
     public void getDescription(){
         System.out.print("This animal is mostly " + color + ".");
-        if(numberOfPaws > 1)
-            System.out.print(" It has " + numberOfPaws + " paws ");
-        else if(numberOfPaws == 1)
+        if(numberOfPaws == 1)
             System.out.print(" It has " + numberOfPaws + " paw ");
+        else
+            System.out.print(" It has " + numberOfPaws + " paws ");
         if(hasFur)
             System.out.print("and a fur.");
         else
