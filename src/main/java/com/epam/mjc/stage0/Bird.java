@@ -7,8 +7,7 @@ public class Bird extends Animal{
 
     @Override
     public String getDescription(){
-        super.getDescription();
-        return "This animal is mostly blue.";
+        return super.getDescription();
     }
 
     public static void main(String[] args) {
