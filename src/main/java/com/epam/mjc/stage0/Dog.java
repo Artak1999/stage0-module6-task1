@@ -8,6 +8,6 @@ public class Dog extends Animal{
 
     public static void main(String[] args) {
         Dog dog = new Dog();
-        dog.getDescription();
+        System.out.print(dog.getDescription());
     }
 }
